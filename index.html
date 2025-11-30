@@ -1,125 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher / Student Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Music App</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #121212; 
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-        .header {
-            background: #4CAF50;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
+    .container {
+        width: 90%;
+        max-width: 420px;
+        background: #181818;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center;
+    }
 
-        .profile-container {
-            width: 90%;
-            max-width: 800px;
-            margin: 30px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+    .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #1DB954;  
+        margin-bottom: 25px;
+    }
 
-        .profile-photo {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto 20px;
-        }
+    input {
+        width: 100%;
+        padding: 14px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 6px;
+        background: #282828;
+        color: white;
+        font-size: 16px;
+    }
 
-        h2 {
-            text-align: center;
-            color: #333;
-        }
+    input:focus {
+        outline: 2px solid #1DB954;
+    }
 
-        .info {
-            margin-top: 20px;
-        }
+    .btn {
+        width: 100%;
+        background: #1DB954;
+        padding: 14px;
+        border: none;
+        border-radius: 40px;
+        font-size: 16px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 15px;
+        transition: 0.3s;
+    }
 
-        .info p {
-            font-size: 18px;
-            margin: 8px 0;
-        }
+    .btn:hover {
+        background: #18a848;
+    }
 
-        .section-title {
-            font-size: 22px;
-            margin-top: 25px;
-            color: #4CAF50;
-        }
+    .small {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #b3b3b3;
+    }
 
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 15px;
-            background: #333;
-            color: white;
-        }
-    </style>
+    a {
+        color: #1DB954;
+    }
+</style>
 </head>
+
 <body>
 
-    <div class="header">
-        <h1>Teacher / Student Profile</h1>
-    </div>
+<div class="container">
+    <div class="logo">MusicFlow</div>
 
-    <div class="profile-container">
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+    <input type="password" placeholder="Create Password">
 
-        <!-- PHOTO -->
-        <img src="https://via.placeholder.com/150" class="profile-photo" alt="Profile Photo">
+    <button class="btn">Register</button>
 
-        <!-- NAME -->
-        <h2>Your Name</h2>
-
-        <!-- BASIC INFO -->
-        <div class="info">
-            <p><strong>Role:</strong> Teacher / Student</p>
-            <p><strong>Qualification:</strong> B.Sc / M.Sc / etc.</p>
-            <p><strong>Subject / Stream:</strong> Mathematics / Science / Commerce / etc.</p>
-            <p><strong>Email:</strong> your-email@gmail.com</p>
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-        </div>
-
-        <!-- ABOUT -->
-        <h3 class="section-title">About Me</h3>
-        <p>
-            Write something about yourself here. Example:  
-            I am passionate about teaching and helping students achieve excellence in studies.
-        </p>
-
-        <!-- SKILLS -->
-        <h3 class="section-title">Skills</h3>
-        <ul>
-            <li>Teaching Experience</li>
-            <li>Communication Skills</li>
-            <li>Subject Knowledge</li>
-            <li>Time Management</li>
-        </ul>
-
-        <!-- EDUCATION -->
-        <h3 class="section-title">Education</h3>
-        <ul>
-            <li>Bachelor Degree in Science</li>
-            <li>Masters in Mathematics</li>
-            <li>Teaching Diploma / B.Ed (Optional)</li>
-        </ul>
-
-    </div>
-
-    <div class="footer">
-        © 2025 Your Name – All Rights Reserved
-    </div>
+    <p class="small">Already have an account? <a href="#">Login</a></p>
+</div>
 
 </body>
 </html>
