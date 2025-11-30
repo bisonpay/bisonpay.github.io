@@ -1,97 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register - Music App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced Bio Website - Personal Portfolio">
+    <title>Advanced Bio - Your Name</title>
+    
+    <link rel="stylesheet" href="styles.css">
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #121212; 
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .container {
-        width: 90%;
-        max-width: 420px;
-        background: #181818;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        text-align: center;
-    }
-
-    .logo {
-        font-size: 28px;
-        font-weight: bold;
-        color: #1DB954;  
-        margin-bottom: 25px;
-    }
-
-    input {
-        width: 100%;
-        padding: 14px;
-        margin: 10px 0;
-        border: none;
-        border-radius: 6px;
-        background: #282828;
-        color: white;
-        font-size: 16px;
-    }
-
-    input:focus {
-        outline: 2px solid #1DB954;
-    }
-
-    .btn {
-        width: 100%;
-        background: #1DB954;
-        padding: 14px;
-        border: none;
-        border-radius: 40px;
-        font-size: 16px;
-        color: black;
-        font-weight: bold;
-        cursor: pointer;
-        margin-top: 15px;
-        transition: 0.3s;
-    }
-
-    .btn:hover {
-        background: #18a848;
-    }
-
-    .small {
-        margin-top: 20px;
-        font-size: 14px;
-        color: #b3b3b3;
-    }
-
-    a {
-        color: #1DB954;
-    }
-</style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    
+    <div class="toggle-mode">
+        <button id="mode-toggle">🌙</button>
+    </div>
 
-<div class="container">
-    <div class="logo">MusicFlow</div>
+    <header>
+        <div class="navbar">
+            <div class="logo">YourName</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <input type="text" placeholder="Full Name">
-    <input type="email" placeholder="Email Address">
-    <input type="password" placeholder="Create Password">
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Your Name</span></h1>
+                <p>I'm a passionate Web Developer, Designer, and Creative Thinker.</p>
+                <button class="cta-btn">Get in Touch</button>
+            </div>
+        </div>
+    </section>
 
-    <button class="btn">Register</button>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I'm a web developer with a focus on building modern, responsive websites and web applications. I specialize in JavaScript, React, and UI/UX design. I'm passionate about creating clean and user-friendly experiences.</p>
+            </div>
+        </div>
+    </section>
 
-    <p class="small">Already have an account? <a href="#">Login</a></p>
-</div>
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-cards">
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express, MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Adobe XD, Sketch</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A web app built with React and Node.js.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A design portfolio showcasing my work.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Real-time chat application using WebSocket.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to get in touch with me!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
